@@ -426,3 +426,77 @@ I’ve put together a **CAD‑ready bill of materials and mechanical layout** fo
 
 When you’re ready for a deeper dive—like STEP templates of the filter bay or shell ribbing strategy—just let me know and we can move on to the next deliverable. Happy modelling!
 
+---
+
+Great — let’s build a **focused BOM and sourcing guide** for the **filters + fan system** in your *SessionMate* air cleaner. This includes high-quality components appropriate for odor/smoke removal, low-noise operation, and modularity.
+
+---
+
+## 🧾 BOM: Filters + Fan System (Core Cleaning Stack)
+
+| Part Name                  | Spec / Description                                         | Suggested Model / Source                            | Unit Price (Est.) | Notes                                             |
+| -------------------------- | ---------------------------------------------------------- | --------------------------------------------------- | ----------------- | ------------------------------------------------- |
+| **HEPA H13 Filter**        | Radial or pancake-style, 180 mm Ø × 40 mm, 99.95% @ 0.3 µm | \[Nidec H13 Cartridge (custom OEM)] or Xiaomi Gen 3 | \$10–15 (bulk)    | Replaceable, stackable slot-in design             |
+| **Activated Carbon Block** | Honeycomb or pelletized, 180 mm Ø × 25 mm, ≥600 g fill     | \[BOFA replacement carbon block] or \[Coway clones] | \$5–12            | Coconut shell carbon ideal for VOC/terpene        |
+| **Pre-filter Foam Disc**   | Washable dust trap, 180 mm Ø × 3 mm, PU foam               | Generic / cut-your-own sheet                        | \$0.50–1          | Optional — protects HEPA from larger dust         |
+| **BLDC Fan (Centrifugal)** | 24 V, 70–90 CFM, 30–35 dBA, PWM speed control              | **Delta BFB1012EH** or **Sunon PMB** series         | \$12–25           | Quiet and high pressure — best for filter airflow |
+| **Fan Mount Grommets**     | Silicone, Ø6–8 mm, soft durometer                          | McMaster-Carr / Alibaba silicone grommet kits       | \$0.20 ×4         | Prevents vibration resonance                      |
+| **Fan Duct / Retainer**    | Plastic or 3D printed radial mount / duct adapter          | Custom 3D print or laser-cut ABS sheet              | \~\$1–3           | Optional for efficient exhaust path               |
+| **Filter Bay Chassis**     | Slide-in frame for HEPA + Carbon + Pre-filter              | Custom (ABS or FDM print)                           | \~DIY             | Match dimensions of filters above                 |
+
+---
+
+## 🔍 Recommended Sourcing Options
+
+### 🔹 **HEPA Filters (H13 or H14)**
+
+* **AliExpress / Alibaba**: Search “H13 radial HEPA 180 mm” or “round HEPA replacement”
+* **Amazon**: Generic Xiaomi/Airmega filters (cuttable or adaptable)
+* **OEM/ODM Suppliers**: Shenzhen Aier Environmental or Nidec Denso (bulk orders)
+* **Key Terms**: "pancake HEPA", "radial pleated", "99.95% 0.3 micron", "custom HEPA core"
+
+### 🔹 **Activated Carbon**
+
+* **BOFA International**: Premium odor-control carbon blocks (used in fume extractors)
+* **3M / Filtrete OEM**: Honeycomb VOC cartridges
+* **Alibaba**: “Coconut shell carbon honeycomb block 180mm”
+* Can also DIY with **pellet fill + perforated casing**
+
+### 🔹 **Fan (Low-Noise, High-Pressure)**
+
+* **Delta Electronics (BFB series)**: Quiet, reliable centrifugal blowers
+
+  * Models: `BFB1012EH` (12V), `BFB1024` (24V), etc.
+* **Sunon PMB / NMB Minebea**: Industrial grade, very low vibration
+* **Noctua / Arctic (PC fans)**: Axial fans (less pressure, but ultra-quiet)
+* **DigiKey / Mouser**: Trusted electronics distributors
+
+### 🔹 **Optional VOC Sensors**
+
+If you want to optimize odor removal using automatic feedback:
+
+* **Sensirion SGP40**: TVOC sensor (\$4–6)
+* **Plantower PMS5003**: PM sensor (for smoke detection)
+* Both work well with an ESP32 or STM32 MCU in smart purifiers.
+
+---
+
+## 🔧 Filter Bay Design Considerations
+
+* Maintain **airtight seals** using **closed-cell EVA foam gaskets** (laser cut or punched).
+* Use **slide-lock frames or twist-lock retainers** for tool-free replacement.
+* Ensure airflow path:
+  `→ Intake Grill → Pre-filter → HEPA → Carbon → Fan → Top Exhaust`
+
+---
+
+Would you like me to:
+
+* Generate a **filter bay CAD mockup** to fit these parts?
+* Help you find **live links for sourcing** (via web search)?
+* Simulate **fan airflow pressure drop** for optimal CFM?
+
+Let me know what you’d like to explore next!
+
+---
+
