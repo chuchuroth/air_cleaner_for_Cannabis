@@ -500,3 +500,176 @@ Let me know what you’d like to explore next!
 
 ---
 
+Great — let’s build a **focused BOM and sourcing guide** for the **filters + fan system** in your *SessionMate* air cleaner. This includes high-quality components appropriate for odor/smoke removal, low-noise operation, and modularity.
+
+---
+
+## 🧾 BOM: Filters + Fan System (Core Cleaning Stack)
+
+| Part Name                  | Spec / Description                                         | Suggested Model / Source                            | Unit Price (Est.) | Notes                                             |
+| -------------------------- | ---------------------------------------------------------- | --------------------------------------------------- | ----------------- | ------------------------------------------------- |
+| **HEPA H13 Filter**        | Radial or pancake-style, 180 mm Ø × 40 mm, 99.95% @ 0.3 µm | \[Nidec H13 Cartridge (custom OEM)] or Xiaomi Gen 3 | \$10–15 (bulk)    | Replaceable, stackable slot-in design             |
+| **Activated Carbon Block** | Honeycomb or pelletized, 180 mm Ø × 25 mm, ≥600 g fill     | \[BOFA replacement carbon block] or \[Coway clones] | \$5–12            | Coconut shell carbon ideal for VOC/terpene        |
+| **Pre-filter Foam Disc**   | Washable dust trap, 180 mm Ø × 3 mm, PU foam               | Generic / cut-your-own sheet                        | \$0.50–1          | Optional — protects HEPA from larger dust         |
+| **BLDC Fan (Centrifugal)** | 24 V, 70–90 CFM, 30–35 dBA, PWM speed control              | **Delta BFB1012EH** or **Sunon PMB** series         | \$12–25           | Quiet and high pressure — best for filter airflow |
+| **Fan Mount Grommets**     | Silicone, Ø6–8 mm, soft durometer                          | McMaster-Carr / Alibaba silicone grommet kits       | \$0.20 ×4         | Prevents vibration resonance                      |
+| **Fan Duct / Retainer**    | Plastic or 3D printed radial mount / duct adapter          | Custom 3D print or laser-cut ABS sheet              | \~\$1–3           | Optional for efficient exhaust path               |
+| **Filter Bay Chassis**     | Slide-in frame for HEPA + Carbon + Pre-filter              | Custom (ABS or FDM print)                           | \~DIY             | Match dimensions of filters above                 |
+
+---
+
+## 🔍 Recommended Sourcing Options
+
+### 🔹 **HEPA Filters (H13 or H14)**
+
+* **AliExpress / Alibaba**: Search “H13 radial HEPA 180 mm” or “round HEPA replacement”
+* **Amazon**: Generic Xiaomi/Airmega filters (cuttable or adaptable)
+* **OEM/ODM Suppliers**: Shenzhen Aier Environmental or Nidec Denso (bulk orders)
+* **Key Terms**: "pancake HEPA", "radial pleated", "99.95% 0.3 micron", "custom HEPA core"
+
+### 🔹 **Activated Carbon**
+
+* **BOFA International**: Premium odor-control carbon blocks (used in fume extractors)
+* **3M / Filtrete OEM**: Honeycomb VOC cartridges
+* **Alibaba**: “Coconut shell carbon honeycomb block 180mm”
+* Can also DIY with **pellet fill + perforated casing**
+
+### 🔹 **Fan (Low-Noise, High-Pressure)**
+
+* **Delta Electronics (BFB series)**: Quiet, reliable centrifugal blowers
+
+  * Models: `BFB1012EH` (12V), `BFB1024` (24V), etc.
+* **Sunon PMB / NMB Minebea**: Industrial grade, very low vibration
+* **Noctua / Arctic (PC fans)**: Axial fans (less pressure, but ultra-quiet)
+* **DigiKey / Mouser**: Trusted electronics distributors
+
+### 🔹 **Optional VOC Sensors**
+
+If you want to optimize odor removal using automatic feedback:
+
+* **Sensirion SGP40**: TVOC sensor (\$4–6)
+* **Plantower PMS5003**: PM sensor (for smoke detection)
+* Both work well with an ESP32 or STM32 MCU in smart purifiers.
+
+---
+
+## 🔧 Filter Bay Design Considerations
+
+* Maintain **airtight seals** using **closed-cell EVA foam gaskets** (laser cut or punched).
+* Use **slide-lock frames or twist-lock retainers** for tool-free replacement.
+* Ensure airflow path:
+  `→ Intake Grill → Pre-filter → HEPA → Carbon → Fan → Top Exhaust`
+
+---
+
+Would you like me to:
+
+* Generate a **filter bay CAD mockup** to fit these parts?
+* Help you find **live links for sourcing** (via web search)?
+* Simulate **fan airflow pressure drop** for optimal CFM?
+
+Let me know what you’d like to explore next!
+
+---
+
+That’s an **excellent and forward-thinking idea** — integrating **solar panels** into your air cleaner, especially for outdoor or semi-mobile use cases (like construction sites or patios for cannabis users), adds real **practical and environmental value**.
+
+Here’s a breakdown of how viable it is — and what design strategies you could consider:
+
+---
+
+## ☀️ Why Solar Panels Make Sense for Your Use Case
+
+### ✅ **Construction Sites**
+
+* Limited or unreliable AC power.
+* Portability + solar = set-and-forget filtering during the day.
+* Pairing with a **battery pack** enables 24/7 runtime (charge during day, clean at night).
+
+### ✅ **Cannabis Users**
+
+* Great for patios, garages, RVs, or camping.
+* Environmentally aligned with many users' lifestyle values.
+* Solar offers independence from household energy use.
+
+---
+
+## ⚡ Solar Power Integration Strategy
+
+### 🔋 **Power Demand Estimation**
+
+Let’s assume the following:
+
+* Fan (BLDC): \~12–15 W avg
+* Sensors + control board: \~2 W
+* LEDs (if dimmed or RGB): \~3–5 W max
+* **Total average draw: 20–25 W**
+
+### 🔆 **Solar Panel Needs**
+
+To reliably power 25 W:
+
+* Minimum: **50–60 W solar panel** (for daytime direct use)
+* Better: **100–120 W panel** + **battery buffer** (for cloudy days + night)
+
+### 🔋 **Battery Integration**
+
+You can either:
+
+* Use a **swappable Li-ion pack** (already in your design)
+* Or add a **dedicated LiFePO₄ battery** (safer, longer life for solar)
+
+Example combo:
+
+* **100 W panel** → **18 V 4 Ah battery (72 Wh)** → run unit \~2–3 hrs
+* Or scale up to 8 Ah for all-day+night usage
+
+---
+
+## 🛠️ Mounting & Mechanical Concepts
+
+### 🔹 **Folding Panel Shell**
+
+* Top shell acts as hinged **solar flap**
+* Panels fold out like a **book or sun visor**
+* Ideal for construction — can sit in sunlight passively
+
+### 🔹 **Detachable Power Dock**
+
+* Panel is separate (kickstand style), plugs into the base via DC barrel or USB‑PD
+* Gives flexibility of **shade placement** vs. **sun panel** positioning
+
+### 🔹 **Solar Charging Port**
+
+* Add **XT60 or USB-C PD input** for solar in (18–21 V input typical)
+* Add **MPPT charge controller module** inside base (e.g., Victron, EPEver)
+
+---
+
+## 🔧 Recommended Solar Hardware
+
+| Component                 | Example Part                             | Cost (Est.) | Notes               |
+| ------------------------- | ---------------------------------------- | ----------- | ------------------- |
+| 100 W Folding Solar Panel | Renogy, Bluetti, or Allpowers (18 V DC)  | \$100–150   | Portable and rugged |
+| MPPT Charge Controller    | Victron SmartSolar 75/15 or EPEver 2210A | \$25–70     | Efficient charging  |
+| Li-ion or LiFePO₄ Battery | 18 V 4–8 Ah pack with BMS                | \$30–60     | Should be swappable |
+| DC Input Port             | XT60 or Anderson connector (panel input) | <\$5        | High current rating |
+
+---
+
+## 🧩 Bonus Ideas
+
+* Add a **solar status LED** or **app readout** of solar gain/battery charge.
+* Design **panel tilt guides** into the housing (optimal solar angle = \~latitude).
+* Offer an **optional solar accessory kit** for premium versions.
+
+---
+
+Would you like:
+
+* A **mechanical layout** showing how the folding panels could integrate?
+* Help picking a **solar controller circuit** compatible with your MCU?
+* A concept sketch of how **panel + fan + battery** flow diagram works?
+
+Let’s solar-power your air cleaner into something next-level.
+
