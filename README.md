@@ -406,3 +406,23 @@ Would you like:
 Let me know where you want to go next!
 
 ![image](https://github.com/user-attachments/assets/c396901f-d09d-4d65-b22b-fdffb67309bf)
+
+
+---
+
+I’ve put together a **CAD‑ready bill of materials and mechanical layout** for the *SessionMate* prototype. You can open or download the spreadsheet for quick import into Fusion 360/SolidWorks and use the specs as reference when modelling each part.
+
+[Download the BOM CSV](sandbox:/mnt/data/SessionMate_BOM.csv)
+
+### How to use this breakdown
+
+1. **Start with the outer shells** (Parts 1, 6, 12) in your CAD file, respecting the overall envelope 240 × 240 × 260 mm.
+2. **Drop in the filter bay chassis** (Part 7) and size the HEPA (Part 8) and carbon block (Part 9) exactly as listed.
+3. **Add the fan** (Part 10) directly beneath the filters, leaving 3–5 mm clearance to the lower shell; mount with the silicone grommets (Part 11).
+4. **Integrate the LED‑diffuser ring** (Parts 4–5) in the gap between upper and lower shells; maintain a 1 mm shoulder for the PMMA lens.
+5. **Model service doors and rails** for the battery (Part 14) and stash drawer (Parts 18–19) following the key dimensions.
+6. **Create mounting bosses** for PCBs (Parts 15–16) and the I/O bracket (Part 21) along the inside perimeter of the lower shell.
+7. Use the **filter gasket** (Part 23) and **retainer frame** (Part 24) dimensions to guarantee an airtight seal around the HEPA cartridge.
+
+When you’re ready for a deeper dive—like STEP templates of the filter bay or shell ribbing strategy—just let me know and we can move on to the next deliverable. Happy modelling!
+
