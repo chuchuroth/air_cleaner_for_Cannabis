@@ -1,0 +1,26 @@
+Part #,Part Name,Qty,Material / Spec,Process,Key Dimensions (mm),Notes
+1,Top Cover Shell,1,GF‑PA12 (SLS 3 mm wall),3D‑print (SLS),240 × 240 × 10,Includes mounting bosses for tray & LED lens
+2,Rolling Tray Insert,1,Bamboo composite or PETG,CNC mill / FDM,160 × 90 × 6,"Detachable, magnetic pins to top shell"
+3,Qi Charger Module,1,15 W coil + PCB,Off‑the‑shelf,60 × 60 × 5,"USB‑C input, aligns to top recess"
+4,LED Diffuser Ring Lens,1,Translucent PMMA,CNC / SLA,Ø220 × 8,Press‑fits between upper & lower shell
+5,RGB LED Strip,1,WS2812 60 LED/m,Off‑the‑shelf,Ø210 circle,Ring glued to lens retainer
+6,Upper Mid‑Shell,1,GF‑PA12 (SLS 3 mm wall),3D‑print (SLS),240 × 240 × 70,Houses filter bay caddy
+7,Filter Bay Chassis,1,ABS,FDM / Sheet fabrication,Ø180 × 80,Slide‑lock rails for filters
+8,HEPA H13 Cartridge,1,"Radial pleat, glass microfiber",Purchase,Ø180 × 40,Spec 99.95 % @ 0.3 µm
+9,Activated Carbon Block,1,Honeycomb; 600 g,Purchase,Ø180 × 25,Pelletized coconut carbon
+10,Fan – BLDC Centrifugal,1,"24 V, 70 CFM",Purchase,Ø120 × 38,"PWM control, slip‑in mount"
+11,Fan Mount Grommets,4,Silicone shore‑A 40,Injection mold,Ø6 × 10,Vibration isolation
+12,Lower Shell w/ Intake Grill,1,GF‑PA12 (SLS 3 mm wall),3D‑print (SLS),240 × 240 × 90,3 mm perforations 50 % open area
+13,Battery Door,1,ABS,FDM / CNC,120 × 60 × 4,Thumb‑latch removable
+14,Li‑ion Battery Pack 18 V 4 Ah,1,18650 cells + BMS,Purchase,100 × 70 × 45,Swappable sled
+15,AC/DC Power Board,1,90 W 110–240 V,Purchase,90 × 45 × 25,Mounted to lower shell standoffs
+16,Control PCB (MCU + Sensors),1,ESP32 + SGP40 + PMS5003,Custom PCB,60 × 40 × 15,"BLE/Wi‑Fi, JST connectors"
+17,Touch Panel Overlay,1,"PC clear, black silkscreen",Laser cut,70 × 20 × 2,Cap sense pads underlay
+18,Stash Drawer Body,1,ABS,FDM,80 × 40 × 25,O‑ring gasket on lip
+19,Drawer Slide Rails,2,POM,Injection mold,80 × 10 × 6,Snap‑fit into shell
+20,USB‑C / 110 V Module,1,Combo receptacle,Purchase,50 × 30 × 25,Mount bracket Part #21
+21,I/O Bracket,1,Alu 5052 1.5 mm,CNC bend,60 × 40 × 20,Holds Part #20
+22,Rubber Feet,4,EPDM,Purchase,Ø10 × 5,Press‑fit posts
+23,Filter Gasket,1,Closed‑cell EVA foam 4 mm,Die‑cut,Ø182 × 4,Seals HEPA to chassis
+24,Carbon Retainer Frame,1,ABS,FDM,Ø180 × 5,Twist‑lock
+25,Carry Handle Strap,1,Nylon webbing + ABS bracket,Cut & sew + injection,250 × 25,Screws to top shell
