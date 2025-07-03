@@ -571,6 +571,63 @@ Would you like me to:
 Let me know what you’d like to explore next!
 
 ---
+Here’s your download link for the **SessionMate Filter Bay CAD Mockup**:
+
+👉 [Download STEP Templates (ZIP)](sandbox:/mnt/data/SessionMate_FilterBay_CAD_Templates.zip)
+
+This ZIP archive includes basic STEP (.step) placeholder files for:
+
+* Filter Bay Frame
+* HEPA Filter Cartridge
+* Carbon Block Filter
+* Pre-filter Disc
+* Fan Module
+* Fan Retainer
+* Gasket Ring
+
+You can import these into **Fusion 360**, **SolidWorks**, or **FreeCAD** to start building your assembly. When you're ready to move to real geometry (not placeholders), I can generate dimensioned models too.
+
+Let me know if you'd like to:
+
+* Adjust dimensions for a specific filter brand
+* Add fastening, gasket slots, or airflow guides
+* Export as STL for 3D printing
+
+We can build it piece by piece!
+
+---
+
+Here are **basic, “true‑geometry” STL models** for every filter‑bay component:
+
+👉 [Download the real‑geometry STL package](sandbox:/mnt/data/SessionMate_FilterBay_REAL_GEOMETRY_STL.zip)
+
+**What’s inside**
+
+| File                        | Description                                                               | Dimensions (mm) |
+| --------------------------- | ------------------------------------------------------------------------- | --------------- |
+| `FilterBay_Frame.stl`       | Outer frame block (230 × 230 × 80) — start point to cut internal cavities | 230 × 230 × 80  |
+| `HEPA_Filter_Cartridge.stl` | Cylindrical H13 filter core                                               | Ø180 × 40       |
+| `Carbon_Block_Filter.stl`   | Cylindrical carbon block                                                  | Ø180 × 25       |
+| `PreFilter_Disc.stl`        | Thin washable foam disc                                                   | Ø180 × 3        |
+| `Fan_Module.stl`            | Centrifugal fan body placeholder                                          | Ø120 × 38       |
+| `Fan_Retainer.stl`          | Ring retainer (seat for fan)                                              | Ø184 / Ø174 × 5 |
+| `Gasket_Ring.stl`           | EVA gasket ring                                                           | Ø182 / Ø178 × 4 |
+
+> **Tip:** Import these STLs into Fusion 360 (Insert → Mesh) and convert to **BRep** if you need solid features. From there, cut the cylindrical cavity inside `FilterBay_Frame`, add slide rails, bolt bosses, or boolean unions as you iterate.
+
+### Next steps
+
+1. **Assemble** the parts in your CAD software to check fit.
+2. **Cut details** (filter slots, airflow ducts) directly into the frame block.
+3. **Scale or tweak** dimensions if you switch to a different filter diameter.
+4. Let me know if you’d like **more detailed fan vanes, mounting tabs, or STEP format** instead of STL.
+
+Happy modelling!
+
+
+
+
+---
 
 That’s an **excellent and forward-thinking idea** — integrating **solar panels** into your air cleaner, especially for outdoor or semi-mobile use cases (like construction sites or patios for cannabis users), adds real **practical and environmental value**.
 
